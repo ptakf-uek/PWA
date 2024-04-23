@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Hello World</title>
+    <title>Hello World - SOS</title>
     <link rel="manifest" href="/manifest.json" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -21,6 +21,7 @@
       crossorigin="anonymous"
     />
   </head>
+
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
@@ -50,21 +51,27 @@
         </div>
       </div>
     </nav>
+
     <div class="container">
       <h2>Send SOS Signal</h2>
+
       <button
         class="btn btn-primary"
         onclick="navigator.vibrate([100, 100, 100, 300, 300, 300, 100, 100, 100])"
       >
         SOS
       </button>
-      <p class="fst-italic mt-1" style="color:gray">&#40;Vibration works only on Android devices&#41;</p>
+
+      <p class="fst-italic mt-1" style="color: gray">
+        &#40;Vibration works only on Android devices&#41;
+      </p>
     </div>
-    <script src="js/main.js"></script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
